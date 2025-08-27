@@ -16,6 +16,8 @@ Usage:
 
 ![deadlock_visual](cache/doc/deadlock.png)
 
+**Notice**: manual modification of signal names and tag/set width is required for each different cache configuration.
+
 TODO: add <u>replaced block info</u> when `release` related state unfinished.
 
 ## Transaction Log Parser and Visualizer

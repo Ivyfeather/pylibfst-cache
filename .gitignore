@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 .virtualenvs
 *.dot
-*.png
+#*.png
 
 # C extensions
 *.so
