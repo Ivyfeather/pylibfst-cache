@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfstapi.a CMakeFiles/fstapi.dir/fastlz.c.o CMakeFiles/fstapi.dir/lz4.c.o CMakeFiles/fstapi.dir/fstapi.c.o CMakeFiles/fstapi.dir/fstext.c.o
+/usr/bin/ranlib libfstapi.a

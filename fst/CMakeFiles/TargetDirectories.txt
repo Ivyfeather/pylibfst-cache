@@ -1,0 +1,3 @@
+/home/runner/work/pylibfst-cache/pylibfst-cache/fst/CMakeFiles/fstapi.dir
+/home/runner/work/pylibfst-cache/pylibfst-cache/fst/CMakeFiles/edit_cache.dir
+/home/runner/work/pylibfst-cache/pylibfst-cache/fst/CMakeFiles/rebuild_cache.dir
