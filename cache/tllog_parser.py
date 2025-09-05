@@ -82,7 +82,8 @@ if __name__ == "__main__":
                 "opcode": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_opcode"),
                 "address": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_address"),
                 "param": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_param"),
-                "source": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_source")
+                "source": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_source"),
+                "data": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_data")
             }
 
         for ts in range(0, timestamps.nvals, 2): # step 2 to skip negedge

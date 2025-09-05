@@ -176,3 +176,10 @@ flycheck_*.el
 
 # pylibfst
 _libfstapi.c
+
+# CMake build artifacts
+fst/CMakeFiles/
+fst/CMakeCache.txt
+fst/cmake_install.cmake
+fst/Makefile
+fst/libfstapi.a
