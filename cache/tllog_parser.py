@@ -82,7 +82,8 @@ if __name__ == "__main__":
                 "opcode": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_opcode"),
                 "address": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_address"),
                 "param": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_param"),
-                "source": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_source")
+                "source": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_source"),
+                "data": get_signal_by_name(f"{cc}.auto_out_{chn}_bits_data")
             }
 
         for ts in range(0, timestamps.nvals, 2): # step 2 to skip negedge
@@ -106,6 +107,7 @@ if __name__ == "__main__":
                                 c_addr_current_source = source
                             
                             param = get_value(chn_all_signals[chn]["param"])
+                            data = get_value(chn_all_signals[chn]["data"], base=16)
 
                             # print(f"Time: {time:5}, {cc:26}: "
                             #       f"{chn.upper()} {opcode_str(chn, opcode):12}, "
@@ -115,7 +117,7 @@ if __name__ == "__main__":
 
                             print(f"{time:5} {tllog_site(cc):16} "
                                 f"{chn.upper()} {opcode_str(chn, opcode):12} "
-                                f"XXX {param_str(chn, param):4} "
+                                f"data=0x{data:x} {param_str(chn, param):4} "
                                 )
 
 
@@ -130,10 +132,11 @@ if __name__ == "__main__":
                             c_addr_current_source = -1
                         if d_match_a or d_match_c:
                             param = get_value(chn_all_signals[chn]["param"])
+                            data = get_value(chn_all_signals[chn]["data"], base=16)
 
                             print(f"{time:5} {tllog_site(cc):16} "
                                 f"{chn.upper()} {opcode_str(chn, opcode):12} "
-                                f"XXX {param_str(chn, param):4} "
+                                f"data=0x{data:x} {param_str(chn, param):4} "
                                 )
 
 
